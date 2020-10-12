@@ -16,6 +16,7 @@ class CashRegister
     @cart << item_info
 
     @total += price * quantity
+    @last_transaction_amount = price * quantity 
 
   end
 
@@ -38,7 +39,7 @@ class CashRegister
   end
 
  def void_last_transaction
-   @item_names.pop
+   
  end
 
 end
